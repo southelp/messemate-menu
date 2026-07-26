@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f4ec">
+  <meta name="description" content="별초롱카페 제조음료 메뉴와 가격을 확인하세요.">
+  <meta property="og:title" content="별초롱카페 메뉴">
+  <meta property="og:description" content="별초롱카페 제조음료 메뉴와 가격">
+  <title>별초롱카페 메뉴</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="menu-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">STAR CHORONG CAFE</p>
+      <h1>별초롱카페 메뉴</h1>
+      <p class="hero__copy">제조음료 메뉴와 가격을 확인해 보세요.</p>
+    </div>
+  </header>
+
+  <main>
+    <nav class="category-nav" aria-label="메뉴 카테고리">
+      <div class="category-nav__scroll" id="categoryFilters"></div>
+    </nav>
+
+    <section class="menu-section" aria-labelledby="menuHeading">
+      <div class="menu-heading">
+        <h2 id="menuHeading">전체 메뉴</h2>
+        <span id="menuCount" aria-live="polite"></span>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <p class="empty" id="emptyState" hidden>해당 카테고리의 메뉴가 없습니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>별초롱카페</strong>
+    <p>메뉴와 가격은 매장 사정에 따라 변경될 수 있습니다.</p>
+  </footer>
+
+  <noscript>메뉴를 보려면 브라우저에서 JavaScript를 허용해 주세요.</noscript>
+</body>
+</html>
