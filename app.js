@@ -7,7 +7,7 @@
   const empty = document.querySelector("#emptyState");
   const formatter = new Intl.NumberFormat("ko-KR");
 
-  const categories = ["전체", ...new Set(items.map((item) => item.category))];
+  const categories = ["전체", "디카페인", "핫", "아이스"];
   let activeCategory = "전체";
 
   function cardTemplate(item) {

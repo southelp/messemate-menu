@@ -46,7 +46,11 @@ def main() -> None:
                 "id": item["id"],
                 "name": item["name"],
                 "price": item["price"],
-                "category": item["category"],
+                "category": (
+                    "디카페인"
+                    if "디카페인" in item["category"]
+                    else item["category"]
+                ),
                 "image": f"assets/menu/{image_name}",
                 "soldout": item["soldout"],
             }
